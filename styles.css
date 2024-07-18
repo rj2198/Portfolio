@@ -1,0 +1,279 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* General Section Styling */
+section {
+    margin: 5px 70px;
+}
+
+#backgroundCanvas {
+    position: fixed;
+    z-index: -1;
+    filter: blur(6px);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#introduction, #skills, #projects, #contact {
+    text-align: center;
+}
+/* Heading 2 Styling */
+h2 {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main Content Padding */
+.main-content {
+    opacity: 1;
+    margin-left: 60px;
+    padding: 20px;
+    margin-left: 150px; 
+}
+
+/* Left Navigation Bar Styling */
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 1001;
+    align-items: center;
+}
+
+/* Scrolling Dots Custom Styles */
+.scrolling-dots {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: -100px;
+}
+
+.scrolling-dots .dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.scrolling-dots .dot:hover {
+    background-color: #555;
+    opacity: 1;
+}
+
+/* Mail Button Styling */
+.mail-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transition effect on hover */
+}
+
+.mail-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Contacts Section Styling */
+.message {
+    padding: 25px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.photo-frame{
+    display: flex;
+    margin-left: 1rem;
+    order: 1;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*/////////////////////////////////////////////////*/
+
+/*///////////// COTACTS - SVG - ETC ///////////////*/
+
+.contact-icons a {
+    color: #000000; /* Change icon color */
+    font-size: 24px; /* Change icon size */
+    margin-right: 10px; /* Space between icons */
+}
+
+.contact-icons a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between boxes */
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #e7e7e7; /* Background color of the box */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Removes underline from icons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.icon-box:hover {
+    background-color: #000000; /* Background color on hover */
+    color: #787878; /* Icon color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.icon-box i {
+    font-size: 24px; /* Icon size */
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;  /* Align items vertically in the center */
+    justify-content: space-between;  /* Space between the text and the image */
+}
+
+.techy-photo {
+    border-radius: 50px;
+    max-width: 30%;
+    border-left: 7px double black;
+    border-bottom: 7px double black;
+    order: -1;  /* This moves the image to the left side */
+}
+
+
+
+
+.message-container {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+    font-family: monospace;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+#contact-form button.send-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#contact-form button.send-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Social Media Logos Styling */
+.social-media-logos {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Resume Button Styling */
+.resume-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: black; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    transition: background-color 0.3s ease; /* Transition effect on hover */
+}
+
+.resume-button, .mail-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(139, 139, 139);
+    margin: 0px 58px;
+}
+
+.rj{
+    padding: 10px;
+}
+.skill-bar {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Improved footer styling */
+.footer {
+    background-color: #404040;
+    color: #fff;
+    padding: 10px 20px;
+}

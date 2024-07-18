@@ -1,0 +1,82 @@
+.skills-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.skills-container{
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.skill-category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.skills-section :hover{
+  transform: scale(1.01);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-bar-container {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.skill-bar {
+  height: 20px;
+  background: linear-gradient(to right, #000000, #aca8a8);
+  box-shadow: inset -20px 0px 20px 0px rgba(0,0,0,0.3);
+  text-align: right;
+  color: white;
+  line-height: 20px;
+  padding-right: 5px;
+  width: 0;
+  transition: width 2s cubic-bezier(0.77, 0.65, 1, 1);
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.sql { width: 70%; }
+.python { width: 85%; }
+.pyspark { width: 80%; }
+.sklearn { width: 80%; }
+.numpy { width: 75%; }
+.tensorflow { width: 70%; }
+.randomforest { width: 80%; }
+.decisiontree { width: 75%; }
+.languagemodels { width: 70%; }
+
+

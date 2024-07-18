@@ -1,0 +1,74 @@
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjustments for .left-nav to organize items horizontally */
+    .left-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%; /* Adjust the height automatically */
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 2000;
+    }
+
+    /* Horizontal alignment for .scrolling-dots */
+    .scrolling-dots {
+        position: static;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px; /* Adjust padding for alignment */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        flex-grow: 1;
+    }
+
+    /* Styling for dot items */
+    .scrolling-dots .dot {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: black; /* Adjust as needed */
+    }
+
+    /* Adjust resume-download section for horizontal layout */
+    .resume-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    /* Adjust social-media-logos for horizontal layout */
+    .social-media-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-direction: row;
+    }
+
+    /* Style adjustments for social media icons */
+    .social-media-logos a {
+        margin: 0 10px;
+        color: black; /* Adjust as needed */
+        font-size: 24px; /* Adjust icon size as needed */
+    }
+
+    /* Main Content adjustments for mobile */
+    .main-content {
+        margin-top: 60px; /* Adjust based on the final height of .left-nav */
+        margin-left: 0;
+        padding: 10px;
+    }
+}

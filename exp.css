@@ -1,0 +1,36 @@
+.exp_container {
+padding: 25px;
+border-radius: 25px;
+background-color: whitesmoke;
+}
+h3 {
+text-align: center;
+padding: 20px;
+}
+#job_titles {
+padding: 25px;
+border-radius: 25px;
+display: flex;
+background: #fff;
+
+border-bottom: 2px solid #eaeaea;
+}
+.job_title {
+padding: 10px;
+border: 1px solid #ddd;
+margin: 5px;
+background: #f9f9f9;
+cursor: pointer;
+}
+.job_description {
+padding: 25px;
+border-radius: 25px;
+display: none;
+padding: 20px;
+background: #fff;
+margin: 5px 0;
+}
+/* Default active job */
+.job_description.active {
+display: block;
+}
